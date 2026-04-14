@@ -16,15 +16,11 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/ivan-14-trifonov/historyofsongs',
     liveUrl: 'https://historyofsongs.vercel.app',
     application: [
-      'Иерархическая структура контента (папки → подпапки → статьи)',
-      'Markdown-форматирование статей',
-      'Статическая генерация всех страниц для быстрой загрузки',
-      'Деплой на Vercel',
-      'Боковая навигация с рекурсивным рендерингом',
-      'Хлебные крошки для навигации'
+      'Исследовательская работа и создание базы знаний по музыкальной литературе МСЦ ЕХБ',
+      'Формат хранения MD — удобный одновременно для исследователей (работа с файлами) и для отображения на сайте'
     ],
     architecture: {
-      description: 'Статический сайт на Next.js с контентом из Markdown-файлов, подключенных как Git Submodule. Все страницы генерируются на этапе сборки для максимальной производительности.',
+      description: 'Статический сайт на Next.js, где код и контент разделены: Markdown-файлы хранятся во внешнем репозитории и подключаются через Git Submodule. На Vercel контент автоматически клонируется перед сборкой (настроено в package.json). Все страницы генерируются на этапе сборки для максимальной производительности.',
       components: [
         {
           name: 'Next.js App Router',
@@ -32,7 +28,7 @@ export const projects: Project[] = [
         },
         {
           name: 'lib/content.ts',
-          description: 'Слой работы с файловой системой: чтение Markdown, парсинг front-matter, построение дерева контента'
+          description: 'Слой работы с файловой системой: чтение Markdown из внешнего репозитория (content/), парсинг front-matter, построение дерева контента'
         },
         {
           name: 'Sidebar',
@@ -40,7 +36,7 @@ export const projects: Project[] = [
         },
         {
           name: 'MarkdownContent',
-          description: 'Рендеринг Markdown в React-компоненты с поддержкой GFM (таблицы, task lists)'
+          description: 'Рендеринг Markdown в React-компоненты с поддержкой GFM и кастомным отображением метаданных из front-matter'
         }
       ]
     },
