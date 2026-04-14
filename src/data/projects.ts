@@ -4,8 +4,8 @@ export const projects: Project[] = [
   {
     slug: 'music-literature-kb',
     title: 'Музыкальная литература',
-    shortDescription: 'База знаний по музыкальной литературе с иерархической структурой',
-    description: 'Веб-приложение для изучения музыкальной литературы с организацией контента в виде иерархических папок и статей в формате Markdown.',
+    shortDescription: 'База знаний по музыкальной литературе МСЦ ЕХБ',
+    description: 'Веб-приложение для изучения музыкальной литературы МСЦ ЕХБ с организацией контента в виде иерархических папок и статей в формате Markdown.',
     technologies: [
       { name: 'Next.js 14', category: 'framework' },
       { name: 'TypeScript', category: 'language' },
