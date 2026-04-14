@@ -5,13 +5,14 @@ import TechBadge from '@/components/TechBadge';
 import { Metadata } from 'next';
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
-  const project = projects.find(p => p.slug === params.slug);
+  const { slug } = await params;
+  const project = projects.find(p => p.slug === slug);
   
   if (!project) {
     return { title: 'Проект не найден' };
@@ -29,8 +30,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = projects.find(p => p.slug === params.slug);
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params;
+  const project = projects.find(p => p.slug === slug);
   
   if (!project) {
     notFound();
