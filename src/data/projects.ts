@@ -3,7 +3,7 @@ import { Project } from '@/types/project';
 export const projects: Project[] = [
   {
     slug: 'music-literature-kb',
-    title: 'Music Literature Knowledge Base',
+    title: 'Музыкальная литература',
     shortDescription: 'База знаний по музыкальной литературе с иерархической структурой',
     description: 'Веб-приложение для изучения музыкальной литературы с организацией контента в виде иерархических папок и статей в формате Markdown.',
     technologies: [
@@ -13,8 +13,8 @@ export const projects: Project[] = [
       { name: 'Markdown', category: 'frontend' },
       { name: 'Vercel', category: 'devops' },
     ],
-    githubUrl: 'https://github.com/yourusername/music-literature-kb',
-    liveUrl: 'https://music-literature-kb.vercel.app',
+    githubUrl: 'https://github.com/ivan-14-trifonov/historyofsongs',
+    liveUrl: 'https://historyofsongs.vercel.app',
     application: [
       'Иерархическая структура контента (папки → подпапки → статьи)',
       'Markdown-форматирование статей',
@@ -51,11 +51,11 @@ export const projects: Project[] = [
       'TypeScript strict mode',
       'Поддержка GitHub Flavored Markdown'
     ],
-    year: 2024
+    year: 2026
   },
   {
     slug: 'repertoire-manager',
-    title: 'Repertoire Manager',
+    title: 'Репертуар',
     shortDescription: 'CRM для управления музыкальным репертуаром коллективов',
     description: 'Веб-приложение для управления музыкальным репертуаром с системой статусов, историей исполнений и правами доступа.',
     technologies: [
@@ -66,8 +66,8 @@ export const projects: Project[] = [
       { name: 'React Router', category: 'frontend' },
       { name: 'Ant Design', category: 'frontend' },
     ],
-    githubUrl: 'https://github.com/yourusername/repertoire-manager',
-    liveUrl: 'https://repertoire-manager.vercel.app',
+    githubUrl: 'https://github.com/ivan-14-trifonov/rep2',
+    liveUrl: 'https://rep2-delta.vercel.app/login',
     application: [
       'Управление музыкальными коллективами (несколько на аккаунт)',
       'CRUD операции с произведениями',
@@ -109,6 +109,6 @@ export const projects: Project[] = [
       '/screenshots/repertoire-manager/works-list.png',
       '/screenshots/repertoire-manager/add-work.png'
     ],
-    year: 2024
+    year: 2025
   }
 ];
