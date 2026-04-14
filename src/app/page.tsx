@@ -1,13 +1,25 @@
 import ProjectCard from '@/components/ProjectCard';
 import { projects } from '@/data/projects';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
       {/* Hero секция */}
       <section className="text-center py-20 px-4">
+        <div className="mb-8">
+          <div className="relative w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-lg">
+            <Image
+              src="/photo.jpg"
+              alt="Иван Трифонов"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-          Моё портфолио
+          Моё портфолио — Иван Трифонов
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           Full-stack разработчик. Создаю веб-приложения с использованием современных технологий.
