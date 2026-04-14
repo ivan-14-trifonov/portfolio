@@ -1,3 +1,31 @@
+Установка зависимостей
+
+bash
+npm install tailwindcss postcss autoprefixer
+npm install -D @types/node
+🚀 Запуск проекта
+
+bash
+# Установка зависимостей
+npm install
+
+# Запуск в режиме разработки
+npm run dev
+
+# Сборка для production
+npm run build
+
+# Запуск production версии
+npm start
+📦 Дополнительные улучшения
+
+Добавьте изображения для проектов в папку public/projects/
+Настройте метаданные в layout.tsx для SEO
+Добавьте анимации при скролле (можно использовать Framer Motion)
+Создайте фильтрацию проектов по технологиям
+Добавьте темную тему (уже подготовлена в стилях)
+Этот код создаст полноценное портфолио с двумя вашими проектами, красивыми карточками и детальными страницами с архитектурой, применением и технологиями.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
