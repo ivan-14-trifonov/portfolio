@@ -12,7 +12,7 @@ export interface Project {
   technologies: Technology[];
   githubUrl?: string;
   liveUrl?: string;
-  application: string[];
+  functionality: string[];
   architecture: {
     description: string;
     diagram?: string;

@@ -96,11 +96,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
         </div>
         
-        {/* Применение */}
+        {/* Функционал */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Применение</h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Функционал</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-            {project.application.map((item, idx) => (
+            {project.functionality.map((item, idx) => (
               <li key={idx}>{item}</li>
             ))}
           </ul>

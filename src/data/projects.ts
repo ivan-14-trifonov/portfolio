@@ -15,7 +15,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/ivan-14-trifonov/historyofsongs',
     liveUrl: 'https://historyofsongs.vercel.app',
-    application: [
+    functionality: [
       'Исследовательская работа и создание базы знаний по музыкальной литературе МСЦ ЕХБ',
       'Формат хранения MD — удобный одновременно для исследователей (работа с файлами) и для отображения на сайте'
     ],
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/ivan-14-trifonov/rep2',
     liveUrl: 'https://rep2-delta.vercel.app/login',
-    application: [
+    functionality: [
       'Управление музыкальными коллективами (несколько на аккаунт)',
       'CRUD операции с произведениями',
       'Система статусов произведений (в репертуаре, актуализировать, переучить и т.д.)',
