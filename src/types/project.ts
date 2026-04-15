@@ -21,7 +21,11 @@ export interface Project {
       description: string;
     }>;
   };
-  features: string[];
+  features: Array<{
+    title: string;
+    description: string;
+    why: string;
+  }>;
   screenshots?: string[];
   year: number;
 }

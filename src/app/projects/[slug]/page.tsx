@@ -125,13 +125,17 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         {/* Особенности */}
         <div className="mb-8">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Ключевые особенности</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-6">
             {project.features.map((feature, idx) => (
-              <div key={idx} className="flex items-start space-x-2">
-                <svg className="w-5 h-5 text-green-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                <span className="text-gray-700 dark:text-gray-300">{feature}</span>
+              <div key={idx} className="bg-white dark:bg-gray-800 rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{feature.title}</h3>
+                <p className="text-gray-700 dark:text-gray-300 mb-3">{feature.description}</p>
+                <div className="bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-500 dark:border-blue-400 px-4 py-3 rounded">
+                  <p className="text-sm text-blue-800 dark:text-blue-300">
+                    <span className="font-semibold">Зачем: </span>
+                    {feature.why}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
