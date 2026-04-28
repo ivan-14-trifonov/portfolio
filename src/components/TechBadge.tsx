@@ -7,6 +7,8 @@ const categoryColors = {
   devops: 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200',
   framework: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200',
   language: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
+  llm: 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200',
+  config: 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200',
 };
 
 interface TechBadgeProps {

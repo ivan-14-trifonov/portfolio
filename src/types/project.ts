@@ -1,6 +1,6 @@
 export interface Technology {
   name: string;
-  category: 'frontend' | 'backend' | 'database' | 'devops' | 'framework' | 'language';
+  category: 'frontend' | 'backend' | 'database' | 'devops' | 'framework' | 'language' | 'llm' | 'config';
 }
 
 export interface Project {
